@@ -8,6 +8,19 @@ class Bst
     end
   end
 
+  def self.create
+    b = Bst.new
+    b.insert 10
+    b.insert 20
+    b.insert 30
+    b.insert 5
+    b.insert 8
+    b.insert 22
+    b.insert 23
+    b.insert 36
+    b
+  end
+
   def initialize
     @root = nil
   end
@@ -33,6 +46,27 @@ class Bst
     elsif  node.right_child && node.right_child.value == value
       handle_removal(node, node.right_child, :right_child=)
     end
+  end
+
+  def in_order_traversal(node = @root)
+    return unless node
+    in_order_traversal(node.left_child)
+    puts "node #{node.value} visited"
+    in_order_traversal(node.right_child)
+  end
+
+  def pre_order_traversal(node = @root)
+    return unless node
+    puts "node #{node.value} visited"
+    pre_order_traversal(node.left_child)
+    pre_order_traversal(node.right_child)
+  end
+
+  def post_order_traversal(node = @root)
+    return unless node
+    post_order_traversal(node.left_child)
+    post_order_traversal(node.right_child)
+    puts "node #{node.value} visited"
   end
 
   private
