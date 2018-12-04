@@ -37,6 +37,7 @@ class G
     puts "node #{node.name} visited" unless search_node.visited || @done
     if node.name == name
       @done = true
+    #FIXME: visited muss woanders hin => kinder können noch nicht besucht sein | sicher?
     elsif node.children.empty? || search_node.visited
       search_node.visited = true
     else
