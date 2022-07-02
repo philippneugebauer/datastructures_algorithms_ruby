@@ -1,8 +1,7 @@
-require 'pry'
-class Mb
+class MinimumBribes
 
   def self.b
-    m = Mb.new
+    m = MinimumBribes.new
     m.minimum_bribes([1,2,5,3,7,8,6,4])
   end
 
