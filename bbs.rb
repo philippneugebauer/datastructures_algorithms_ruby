@@ -1,7 +1,7 @@
-class Bbs
+class BubbleSort
 
   def self.s
-    b = Bbs.new
+    b = BubbleSort.new
     array = [5,8,1,2,4,3]
     puts "array: [#{array.join(", ")}]"
     result = b.bubble_sort array
