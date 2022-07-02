@@ -1,4 +1,4 @@
-class Bst
+class BinarySearchTree
   class Node
     attr_reader :value
     attr_accessor :left_child, :right_child
@@ -9,7 +9,7 @@ class Bst
   end
 
   def self.create
-    b = Bst.new
+    b = BinarySearchTree.new
     b.insert 10
     b.insert 20
     b.insert 30
