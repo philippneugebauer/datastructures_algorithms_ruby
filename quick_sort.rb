@@ -1,7 +1,7 @@
-class Qs
+class QuickSort
 
   def self.q
-    q = Qs.new
+    q = QuickSort.new
     result = q.quicksort [6,9,2,3,7,1,4]
     puts "result: [#{result.join(", ")}]"
   end
