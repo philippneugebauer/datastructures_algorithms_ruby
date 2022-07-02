@@ -1,8 +1,7 @@
-require 'pry'
-class Bs
+class BinarySearch
 
   def self.s
-    b = Bs.new
+    b = BinarySearch.new
     array = [1,3,5,6,7,8,9]
     puts "array: [#{array.join(", ")}]"
     result = b.binary_search array, 5
