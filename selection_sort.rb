@@ -1,7 +1,7 @@
-class S
+class SelectionSort
 
   def self.s
-    b = S.new
+    b = SelectionSort.new
     array = [5,8,1,2,4,3]
     puts "array: [#{array.join(", ")}]"
     result = b.selection_sort array
